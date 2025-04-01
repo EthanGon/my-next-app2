@@ -1,17 +1,16 @@
 "use client"
 
-import { useState } from "react"
+import Form from "./components/Form"
+import Table from "./components/Table"
 
 function HomePage() {
-    const [count, setCount] = useState(0);
-
+    
     return (
-        <div>
-            <h1>Counter: {count}</h1>
-            <button onClick={() => {
-                setCount(count + 1);
-            }}>Add one</button>
-        </div>
+       <div>
+        <h1>FavLinks</h1>
+        <Form/>
+        <Table/>
+       </div>
     )
 }
 export default HomePage
